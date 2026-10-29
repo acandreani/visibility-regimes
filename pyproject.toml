@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visibility-regimes"
+version = "0.1.0"
+description = "Recent-window visibility features and reproducible chaotic-event heatmaps"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<2"]
+
+[project.optional-dependencies]
+train = ["torch==2.2.2"]
+plot = ["matplotlib>=3.7,<4"]
+
+[tool.setuptools.packages.find]
+include = ["visibility_regimes*"]
